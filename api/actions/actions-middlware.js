@@ -15,7 +15,7 @@ function validateActionId (req, res, next) {
                 message: `Action with id ${id} not found`
             }) }
     })
-    .catch(err => {
+    .catch(err => { // eslint-disable-line
         res.stats(500).json({
             message: "Error retrieving action"
         })
@@ -44,7 +44,7 @@ function validateProjectExist(req, res, next) {
                     message: `Project with id ${project_id} does not exist`
                 }) }
         })
-        .catch(err => {
+        .catch(err => { // eslint-disable-line
             res.status(500).json({
                 message: "Error retrieving project"
             })

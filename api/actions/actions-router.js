@@ -1,7 +1,6 @@
 const express = require('express')
 const router = express.Router()
 const Actions = require('../actions/actions-model')
-const Projects = require('../projects/projects-model')
 
 const { 
     validateActionId, 

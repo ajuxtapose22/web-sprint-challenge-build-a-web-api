@@ -16,7 +16,7 @@ function validateProject(req, res, next) {
             })
         }
     })
-    .catch(err => {
+    .catch(err => { // eslint-disable-line
         res.status(500).json({
             message: "Error retrieving project"
         })
